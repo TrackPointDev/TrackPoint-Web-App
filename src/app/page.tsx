@@ -11,14 +11,6 @@ import { useRouter } from "next/navigation";
 const StartScreen: NextPage = () => {
   const router = useRouter();
 
-  const onTextLinkClick = useCallback(() => {
-    router.push("/forgot-password");
-  }, [router]);
-
-  const onButtonClick = useCallback(() => {
-    router.push("/sign-up");
-  }, [router]);
-
   return (
     <div className="w-full relative bg-schemes-background h-[1024px] flex flex-col items-center justify-center py-10 px-[210px] box-border text-left text-xl text-text-default-tertiary font-single-line-body-base">
       <div className="w-[600px] shadow-[0px_16px_32px_-8px_rgba(12,_12,_13,_0.4)] rounded-[20px] h-[880px] overflow-hidden shrink-0 flex flex-col items-center justify-start">
